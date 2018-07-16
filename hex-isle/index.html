@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hex Isle Map - Setting up board of Settlers of Catan made easy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Hex Isle Map will help you generate a new random map for a game of Catan and allow for faster game setup. It supports both pure random and even (aka fair) board generation.">
+    <meta name="author" content="Nikolai Abalov">
+    <meta name="keywords"
+          content="iOS, app, iPhone, iPad, Universal app, Catan, Board, Board Game, Settler, Settlers, Seafarers, Game Setup, Board Setup, Map Generator, Utility">
+    <meta name="apple-itunes-app" content="app-id=836980306, affiliate-data=, app-argument=">
+
+    <link rel="stylesheet" type="text/css" href="/apps/style.css">
+    <style>
+        .tokens-list {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        }
+
+        .tokens-list li {
+        list-style-type: none;
+        padding-top: 0;
+        padding-left: 12px;
+        margin-bottom: 0;
+        }
+
+        .tokens-list li:before {
+        position: absolute;
+        margin: 2px 0 0 -30px;
+        min-height: 19px;
+        background: url(images/hexes.png) no-repeat;
+        width: 18px;
+        content: "";
+        vertical-align: middle;
+        }
+
+        .tokens-list li.brick:before {
+        background-position: 0 0;
+        }
+
+        .tokens-list li.lumber:before {
+        /*pulling it up so y will be negative*/
+        background-position: -18px 0;
+        }
+
+        .tokens-list li.wool:before {
+        background-position: -36px 0;
+        }
+
+        .tokens-list li.grain:before {
+        background-position: -54px 0;
+        }
+
+        .tokens-list li.ore:before {
+        background-position: -72px 0;
+        }
+
+        .tokens-list li.desert:before {
+        background-position: -90px 0;
+        }
+
+        .tokens-list li.gold:before {
+        background-position: -108px 0;
+        }
+
+        .tokens-list li.sea:before {
+        background-position: -126px 0;
+        }
+
+        .tokens-list li.fog:before {
+        background-position: -144px 0;
+        }
+
+        .tokens-list li.port-brick:before {
+        background-position: -162px 0;
+        }
+
+        .tokens-list li.port-lumber:before {
+        /*pulling it up so y will be negative*/
+        background-position: -180px 0;
+        }
+
+        .tokens-list li.port-wool:before {
+        background-position: -198px 0;
+        }
+
+        .tokens-list li.port-grain:before {
+        background-position: -216px 0;
+        }
+
+        .tokens-list li.port-ore:before {
+        background-position: -234px 0;
+        }
+
+        .tokens-list li.port-3to1:before {
+        background-position: -252px 0;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 2) {
+        .tokens-list li:before {
+        /*noinspection CssInvalidFunction*/
+        background: -webkit-image-set(url(images/hexes.png) 1x,
+        url(images/hexes_2x.png) 2x) no-repeat;
+        }
+        }
+
+        @media only screen
+        and (max-device-width: 568px) {
+        /* STYLES GO HERE */
+        #main {
+        padding: 0 30px;
+        }
+
+        .left-align .image-col, .left-align .text-col, .right-align .image-col, .right-align .text-col {
+        float: none;
+        width: 100%;
+        margin: 0;
+        }
+
+        .image-col {
+        text-align: center;
+        }
+
+        #nav ul li {
+        float: none;
+        margin-right: 0;
+        }
+    }
+    </style>
+<body>
+<div id="main">
+    <div id="nav">
+        <ul>
+            <li><a href="#About">Hex Isle Map</a></li>
+            <li><a href="#Features">Features</a></li>
+            <li><a href="#Legend">Help</a></li>
+            <li><a href="#Support">Support</a></li>
+            <li><a href="/apps/hex-isle/terms">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <section>
+        <div class="text-col">
+            <h1 id="About">Hex Isle Map</h1>
+            <p>
+                The Settlers of Catan is an exciting multiplayer board game played on a randomly generated map.
+                This app will help you generate a new random map for faster game setup.
+                It supports both pure random and even board generation.
+            </p>
+        </div>
+    </section>
+    <section class="left-align">
+        <div class="image-col">
+            <img class="left" alt="Hex Isle Map - Settlers of Catan Map"
+                 src="/apps/hex-isle/images/settlers-screen.png">
+        </div>
+        <div class="text-col">
+            <h2 id="Features">Features</h2>
+            <ul>
+                <li>Universal app</li>
+                <li>Zoomable map</li>
+                <li>Supports following extensions:
+                    <ul>
+                        <li>First Settlement 3-4 players (Classic Settlers of Catan)</li>
+                        <li>First Settlement 5-6 players</li>
+                        <li>Seafarers 3-4 players</li>
+                        <li>Seafarers 5-6 players</li>
+                    </ul>
+                </li>
+                <li>Two board generation modes:
+                    <ul>
+                        <li>Random board generator creates all random board</li>
+                        <li>Even (fair) board generator creates a board with evenly spread probabilities allowing for
+                            more
+                            engaging and strategic games
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="note">
+                This is a utility app to help you setup board in a game of Catan, it is not the game itself.
+            </p>
+            <p class="center app-store-badge">
+                <a href="https://itunes.apple.com/us/app/hex-isle-map-map-generator/id836980306?mt=8">
+                    <img
+                            src="/apps/images/app-store.svg"
+                            alt="Download on the App Store">
+                </a>
+            </p>
+        </div>
+    </section>
+    <section class="right-align">
+        <div class="image-col">
+            <img class="right" alt="Hex Isle Map - Board options"
+                 src="/apps/hex-isle/images/game-type-screen.png">
+        </div>
+        <div class="text-col">
+            <h2 id="Legend">Help</h2>
+            <p>Following notation is used in the app:</p>
+            <ul class="tokens-list">
+                <li class="fog">Fogged &mdash; double tap tile to reveal its type.</li>
+                <li class="sea">Sea</li>
+                <li class="brick">Brick (Hills)</li>
+                <li class="lumber">Lumber (Forest)</li>
+                <li class="wool">Wool (Pasture)</li>
+                <li class="grain">Grain (Fields)</li>
+                <li class="ore">Ore (Mountains)</li>
+                <li class="desert">Desert</li>
+                <li class="gold">Gold Field</li>
+
+                <li class="port-brick">Brick 2:1 Port</li>
+                <li class="port-lumber">Lumber 2:1 Port</li>
+                <li class="port-wool">Wool2:1 Port</li>
+                <li class="port-grain">Grain 2:1 Port</li>
+                <li class="port-ore">Ore 2:1 Port</li>
+                <li class="port-3to1">3:1 Port</li>
+            </ul>
+        </div>
+    </section>
+    <section class="left-align">
+        <div class="image-col">
+            <img class="" alt="Hex Isle Map - Seafarers Map"
+                 src="/apps/hex-isle/images/seafarers-screen.png">
+        </div>
+        <div class="text-col">
+            <h2 id="Support">Support</h2>
+            <p>
+                <a href="mailto:nickab.tv+settlers@gmail.com">Send me a message</a> if you have encountered a bug, want
+                to suggest some feature, or just want to say thanks.
+            </p>
+            <h2>More board game utility apps</h2>
+            <h3>Scoring in a game of Ticket to Ride</h3>
+            <p>Counting final score in Ticket to Ride can be time-consuming and error-prone.<br/>
+                <a href="/apps/score-tickets">Score Tickets</a> will help you to count final score
+                for all players fast and error free. Just enter routes length, tickets score, and bonuses for each
+                player and the app will arrange players according to the score.
+            </p>
+        </div>
+    </section>
+    <div class="footer">
+        <p>
+            Copyright &copy; 2014 Nikolai Abalov.
+            Neither the app, nor the publisher is in anyway affiliated with
+            Settlers of Catan, Klaus Teuber or any of the board game publishers.
+        </p>
+    </div>
+</div>
+</body>
+</html>
