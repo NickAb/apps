@@ -39,7 +39,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-#main {
+.wrapper {
     line-height: 1.5em;
     max-width: 980px;
     margin: 0 auto;
@@ -172,19 +172,19 @@ section {
     padding-bottom: 24px;
 }
 
-#nav ul li {
+.nav ul li {
     float: left;
     margin-left: 0;
     margin-right: 30px;
     list-style-type: none;
 }
 
-#nav ul {
+.nav ul {
     display: inline-block;
     margin-top: 20px;
 }
 
-#nav {
+.nav {
     border-bottom: 1px solid #ced0d5;
 }
 
@@ -198,8 +198,7 @@ section {
 
 @media only screen
 and (max-device-width: 568px) {
-    /* STYLES GO HERE */
-    #main {
+    .wrapper {
         padding: 0 30px;
     }
 
