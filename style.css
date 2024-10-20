@@ -32,11 +32,12 @@ html {
 }
 
 body {
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     font-weight: normal;
     font-size: 16px;
     height: 100%;
     -webkit-font-smoothing: antialiased;
+    background-color: #F2F2F7;;
 }
 
 .wrapper {
@@ -46,19 +47,12 @@ body {
     padding: 0 70px;
     border: 0;
     min-height: 100%;
-    background-color: #fff;
-    color: #556;
 }
 
 section {
-    padding: 20px 0;
+    margin: 20px 0;
     clear: both;
-    border-bottom: 1px solid #CED0D5;
     overflow: hidden;
-}
-
-.text-col {
-
 }
 
 h1 {
@@ -67,6 +61,7 @@ h1 {
 
 h2 {
     font-size: 2em;
+    font-weight: 600;
 }
 
 h3 {
@@ -74,8 +69,8 @@ h3 {
 }
 
 h1, h2, h3 {
-    margin-bottom: 0.25em;
-    line-height: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.0625;
     color: #333;
 }
 
@@ -172,20 +167,43 @@ section {
     padding-bottom: 24px;
 }
 
-.nav ul li {
-    float: left;
-    margin-left: 0;
-    margin-right: 30px;
-    list-style-type: none;
+.footer .disclaimer {
+    color: #8E8E93;
 }
 
 .nav ul {
-    display: inline-block;
+    display: flex;
     margin-top: 20px;
+
+    li {
+        margin-left: 0;
+        margin-right: 30px;
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: #232424;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    li.logo {
+        flex: 1;
+
+        a {
+            font-weight: 900;
+        }
+    }
 }
 
 .nav {
-    border-bottom: 1px solid #ced0d5;
+    /* border-bottom: 1px solid #ced0d5; */
+    padding-bottom: 20px;
 }
 
 .app-store-badge {
@@ -193,7 +211,9 @@ section {
 }
 
 .note {
-    background-color: #fdfad8;
+    background-color: #f5eea9;
+    border-radius: 4px;
+    padding: 8px;
 }
 
 @media only screen
@@ -210,10 +230,5 @@ and (max-device-width: 568px) {
 
     .image-col {
         text-align: center;
-    }
-
-    #nav ul li {
-        float: none;
-        margin-right: 0;
     }
 }
