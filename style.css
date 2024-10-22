@@ -175,6 +175,8 @@ section {
     display: flex;
     margin-top: 20px;
 
+    flex-wrap: wrap;
+
     li {
         margin-left: 0;
         margin-right: 30px;
@@ -230,5 +232,9 @@ and (max-device-width: 568px) {
 
     .image-col {
         text-align: center;
+    }
+
+    .nav ul li.logo {
+        flex-basis: 100%;
     }
 }
